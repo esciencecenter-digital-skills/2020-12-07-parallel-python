@@ -350,15 +350,16 @@ please preview your site before committing, and make sure to run
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-> ### TLDR
-> You need the following:
+> ### TL;DR
+> Next to the Zoom video conferencing client, you need the following:
 > - Python &ge;3.8
 > - Jupyter Lab
 > - Git
 > - Bash or equivalent shell
-> - Clone [github.com/jhidding/parallel-python-workshop](https://github.com/jhidding/parallel-python-workshop)
+> - Clone [github.com/escience-academy/parallel-python-workshop](https://github.com/escience-academy/parallel-python-workshop) and run the unit tests to see if your environment is up-to-date.
 >
 > Run the following if you use `conda`:
+>
 > ``` {.bash}
 > git clone --recurse-submodules https://github.com/escience-academy/parallel-python-workshop
 > cd parallel-python-workshop
