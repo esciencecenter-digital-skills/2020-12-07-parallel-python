@@ -48,34 +48,6 @@ to let us know about your workshop and our administrator may contact you if we
 need any extra information.
 </div> -->
 
-{% comment %}
-8< ============================= until here ==================
-{% endcomment %}
-
-
-{% comment %}
-Check DC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "dc" %}
-{% unless site.curriculum == "dc-ecology" or site.curriculum == "dc-genomics" or site.curriculum == "dc-socsci" or site.curriculum == "dc-geospatial" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Data Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>dc-ecology</code>, <code>dc-genomics</code>, <code>dc-socsci</code>, or <code>dc-geospatial</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
-
-{% comment %}
-Check SWC curriculum
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% unless site.curriculum == "swc-inflammation" or site.curriculum == "swc-gapminder" %}
-<div class="alert alert-warning">
-It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
-</div>
-{% endunless %}
-{% endif %}
 
 {% comment %}
 EVENTBRITE
@@ -108,6 +80,8 @@ the pitch.
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
+{% elsif site.carpentry == "ea" %}
+{% include ea/intro.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
@@ -122,6 +96,8 @@ workshop is only open to people from a particular institution.
 {% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
+{% elsif site.carpentry == "ea" %}
+{% include ea/who.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
@@ -308,6 +284,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
+{% elsif site.carpentry == "ea" %}
+{% include ea/schedule.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
@@ -382,7 +360,7 @@ please preview your site before committing, and make sure to run
 >
 > Run the following if you use `conda`:
 > ``` {.bash}
-> git clone --recurse-submodules https://github.com/jhidding/parallel-python-workshop
+> git clone --recurse-submodules https://github.com/escience-academy/parallel-python-workshop
 > cd parallel-python-workshop
 > conda env create -f environment.yml
 > conda activate parallel-python
@@ -412,7 +390,7 @@ during the workshop.
 
 
 {% if site.carpentry == "ea" %}
-{% include swc/setup.html %}
+{% include ea/setup.html %}
 {% elsif site.carpentry == "swc" %}
 {% include swc/setup.html %}
 {% elsif site.carpentry == "dc" %}
