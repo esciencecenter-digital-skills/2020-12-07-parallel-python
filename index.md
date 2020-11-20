@@ -368,7 +368,7 @@ please preview your site before committing, and make sure to run
 > pytest
 > ```
 >
-> The tests should run without error
+> The tests should run without error. If you managed to install everything but somehow the unit tests fail, please contact us, either through an issue on Github or a mail to [training@esciencecenter.nl](mailto:training@esciencecenter.nl).
 
 {% comment %}
 For online workshops, the section below provides:
