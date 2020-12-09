@@ -12,14 +12,6 @@ https://creativecommons.org/licenses/by/4.0/
 
  ----------------------------------------------------------------------------
 
-This is the Document for today: [link](https://hackmd.io/@O0tsDNPbTlyhyGiiCMaLIw/rylYGmScD)
-
-Collaborative Document day 1: [link](https://hackmd.io/@O0tsDNPbTlyhyGiiCMaLIw/ByWbNGE5w)
-
-Collaborative Document day 2: [link](https://hackmd.io/@O0tsDNPbTlyhyGiiCMaLIw/rylYGmScD)
-
-
-
 ## 👮Code of Conduct
 Participants are expected to follow those guidelines:
 
